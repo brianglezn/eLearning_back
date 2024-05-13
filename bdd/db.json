@@ -1,0 +1,228 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Modern Front-End Development",
+      "description": "Master HTML, CSS, and JavaScript to build responsive and dynamic websites.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "29.99 €",
+      "rating": "2.8",
+      "reviews": 3487,
+      "category": "Web Development",
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "HTML Basics",
+              "description": "Learn the basics of HTML, including tags, attributes, and document structure.",
+              "video_url": "https://example.com/modern_frontend/introduction/html_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "CSS Fundamentals",
+              "description": "Explore the fundamental concepts of CSS, such as selectors, properties, and styling techniques.",
+              "video_url": "https://example.com/modern_frontend/introduction/css_fundamentals.mp4"
+            },
+            {
+              "episode": 3,
+              "title": "JavaScript Essentials",
+              "description": "Understand the essential concepts of JavaScript, including variables, data types, and control flow.",
+              "video_url": "https://example.com/modern_frontend/introduction/js_essentials.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Topics",
+          "episodes": [
+            {
+              "episode": 4,
+              "title": "Responsive Design Techniques",
+              "description": "Learn advanced techniques for creating responsive web designs that adapt to different screen sizes.",
+              "video_url": "https://example.com/modern_frontend/advanced/responsive_design.mp4"
+            },
+            {
+              "episode": 5,
+              "title": "Advanced JavaScript Concepts",
+              "description": "Dive deeper into JavaScript with advanced topics such as closures, prototypes, and asynchronous programming.",
+              "video_url": "https://example.com/modern_frontend/advanced/js_advanced.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Advanced React and Redux",
+      "description": "Deep dive into React development and learn to manage your application state with Redux.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "34.99 €",
+      "rating": "3.9",
+      "reviews": 2890,
+      "category": "Web Development",
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Getting Started with React",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "React Basics",
+              "description": "Learn the basics of React, including components, JSX syntax, and props.",
+              "video_url": "https://example.com/advanced_react/getting_started/react_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "React Components",
+              "description": "Understand how to create and manage React components to build dynamic user interfaces.",
+              "video_url": "https://example.com/advanced_react/getting_started/react_components.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Managing State with Redux",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Redux Fundamentals",
+              "description": "Learn the core concepts of Redux, including actions, reducers, and the Redux store.",
+              "video_url": "https://example.com/advanced_react/redux/redux_fundamentals.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Advanced Redux Techniques",
+              "description": "Explore advanced techniques for managing complex application state with Redux.",
+              "video_url": "https://example.com/advanced_react/redux/advanced_redux.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Node.js: From Zero to Production",
+      "description": "Become a backend expert with Node.js, Express, and MongoDB databases.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "39.99 €",
+      "rating": "4.7",
+      "reviews": 4023,
+      "category": "Backend Development",
+      "chapters": []
+    },
+    {
+      "id": 4,
+      "title": "UX/UI Design for Beginners",
+      "description": "Understand the fundamental principles of interface design and user experience.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "24.99 €",
+      "rating": "3.6",
+      "reviews": 1765,
+      "category": "UX/UI Design",
+      "chapters": []
+    },
+    {
+      "id": 5,
+      "title": "Data Science Fundamentals",
+      "description": "Get introduced to the world of data analysis and learn to interpret complex information.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "45.99 €",
+      "rating": "2.5",
+      "reviews": 2319,
+      "category": "Data Science",
+      "chapters": []
+    },
+    {
+      "id": 6,
+      "title": "Full Stack with Django and React",
+      "description": "Build complete web applications with Django backend and React frontend.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "49.99 €",
+      "rating": "1.7",
+      "reviews": 1587,
+      "category": "Full Stack Development",
+      "chapters": []
+    },
+    {
+      "id": 7,
+      "title": "Introduction to Python",
+      "description": "Learn Python from scratch. A comprehensive course covering basic syntax to advanced programming concepts.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "19.99 €",
+      "rating": "5",
+      "reviews": 5400,
+      "category": "Programming",
+      "chapters": []
+    },
+    {
+      "id": 8,
+      "title": "Applied Machine Learning",
+      "description": "Explore advanced machine learning techniques and artificial intelligence to solve real-world problems.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "59.99 €",
+      "rating": "2.9",
+      "reviews": 3150,
+      "category": "Artificial Intelligence",
+      "chapters": []
+    },
+    {
+      "id": 9,
+      "title": "Mobile App Development with Flutter",
+      "description": "From interface creation to database integration, learn how to develop mobile apps with Flutter.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "35.99 €",
+      "rating": "3.6",
+      "reviews": 2020,
+      "category": "Mobile Development",
+      "chapters": []
+    },
+    {
+      "id": 10,
+      "title": "Cybersecurity for Beginners",
+      "description": "Discover the fundamentals of cybersecurity and how to protect your systems from threats.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "25.99 €",
+      "rating": "4.7",
+      "reviews": 1650,
+      "category": "Cybersecurity",
+      "chapters": []
+    },
+    {
+      "id": 11,
+      "title": "Cloud Computing Fundamentals",
+      "description": "Learn to work with major cloud computing platforms and deploy applications in the cloud.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "29.99 €",
+      "rating": "1.5",
+      "reviews": 1487,
+      "category": "Cloud Computing",
+      "chapters": []
+    },
+    {
+      "id": 12,
+      "title": "Digital Marketing and Social Media",
+      "description": "Practical course to learn how to design and execute effective digital marketing strategies and manage social media.",
+      "image": "https://res.cloudinary.com/dz0mwxb0v/image/upload/v1714405656/eLearning/courses/curso_py.jpg",
+      "price": "49.99 €",
+      "rating": "2.8",
+      "reviews": 1932,
+      "category": "Digital Marketing",
+      "chapters": []
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "prueba1",
+      "email": "prueba1@el.com",
+      "password": "$2b$10$6.k3re/lyWy.jNf81kMi8.qreZ26GX.wQQMYGYdiBQLRgRC6hoB9e",
+      "role": "student",
+      "courses_purchased": [
+        1
+      ]
+    }
+  ]
+}
