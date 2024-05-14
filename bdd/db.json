@@ -216,7 +216,7 @@
   "users": [
     {
       "id": 1,
-      "username": "prueba1",
+      "username": "prueba_1",
       "name": "Prueba",
       "surname": "1",
       "email": "prueba1@el.com",
