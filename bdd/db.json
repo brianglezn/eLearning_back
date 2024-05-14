@@ -223,6 +223,16 @@
       "courses_purchased": [
         1
       ]
+    },
+    {
+      "id": 2,
+      "username": "brianglezn",
+      "name": "Brian",
+      "surname": "González Novoa",
+      "email": "brianglezn@gmail.com",
+      "password": "$2a$10$XSB9O8K85dqeqM21A1pD8.OP93di5mmTfmtiUctgHCx45umEghljS",
+      "role": "student",
+      "courses_purchased": []
     }
   ]
 }
