@@ -217,6 +217,8 @@
     {
       "id": 1,
       "username": "prueba1",
+      "name": "Prueba",
+      "surname": "1",
       "email": "prueba1@el.com",
       "password": "$2b$10$6.k3re/lyWy.jNf81kMi8.qreZ26GX.wQQMYGYdiBQLRgRC6hoB9e",
       "role": "student",
