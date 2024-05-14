@@ -53,7 +53,7 @@ export async function loginUser(req, res) {
 }
 
 export async function registerUser(req, res) {
-    const { username, email, password } = req.body;
+    const { username, name, surname, email, password } = req.body;
     const data = readDB();
 
     if (data.users.some(user => user.email === email)) {
@@ -66,6 +66,8 @@ export async function registerUser(req, res) {
     const newUser = {
         id: data.users.length + 1,
         username,
+        name,
+        surname,
         email,
         password: hashedPassword,
         role: 'student',
