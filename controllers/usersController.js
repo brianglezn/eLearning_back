@@ -18,23 +18,6 @@ function readDB() {
     return JSON.parse(jsonData);
 }
 
-export function getAllUsers(req, res) {
-    const data = readDB();
-    res.status(200).json(data.users);
-}
-
-export function getUserById(req, res) {
-    const { id } = req.params;
-    const data = readDB();
-    const user = data.users.find(u => u.id.toString() === id);
-
-    if (user) {
-        res.status(200).json(user);
-    } else {
-        res.status(404).send('Usuario no encontrado');
-    }
-}
-
 export async function loginUser(req, res) {
     const { email, password } = req.body;
     const data = readDB();
@@ -80,4 +63,20 @@ export async function registerUser(req, res) {
     writeDB(data);
 
     res.status(201).json({ message: "User registered successfully!", user: newUser });
+}
+
+export async function getUserByToken(req, res) {
+    const token = req.headers.authorization.split(' ')[1];
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const data = readDB();
+        const user = data.users.find(u => u.id === decoded.id);
+        if (user) {
+            res.status(200).json(user);
+        } else {
+            res.status(404).send('Usuario no encontrado');
+        }
+    } catch (err) {
+        res.status(401).send('Token inválido');
+    }
 }
