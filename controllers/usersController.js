@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const dbPath = path.join(__dirname, '../bdd/db.json');
+const dbPath = path.join(__dirname, '../bdd/database.json');
 
 function writeDB(data) {
     const jsonData = JSON.stringify(data, null, 2);
