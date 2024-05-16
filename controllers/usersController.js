@@ -18,6 +18,11 @@ function readDB() {
     return JSON.parse(jsonData);
 }
 
+export function getAllUsers(req, res) {
+    const data = readDB();
+    res.status(200).json(data.users);
+}
+
 export async function loginUser(req, res) {
     const { email, password } = req.body;
     const data = readDB();
