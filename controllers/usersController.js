@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,7 +44,8 @@ export async function loginUser(req, res) {
     if (user) {
         const isMatch = await bcrypt.compare(password, user.password);
         if (isMatch) {
-            res.status(200).json({ message: "Login successful!", user });
+            const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
+            res.status(200).json({ message: "Login successful!", user, token });
         } else {
             res.status(401).send('Invalid credentials');
         }
