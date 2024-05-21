@@ -6,16 +6,14 @@ dotenv.config();
 const DB_USER = process.env.DB_USER;
 const DB_PASS = process.env.DB_PASS;
 const DB_NAME = process.env.DB_NAME;
-const DB_URI = `mongodb+srv://${DB_USER}:${DB_PASS}@elearning.exdyomm.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
+const DB_URI = `mongodb+srv://${DB_USER}:${DB_PASS}@elearning.exdyomm.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&ssl=true`;
 
 const client = new MongoClient(DB_URI, {
     serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
         deprecationErrors: true,
-    },
-    tls: true,
-    tlsAllowInvalidCertificates: true,
+    }
 });
 
 async function run() {
