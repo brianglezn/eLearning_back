@@ -1,9 +1,12 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const DB_USER = process.env.DB_USER;
 const DB_PASS = process.env.DB_PASS;
 const DB_NAME = process.env.DB_NAME;
-const DB_URI = `mongodb+srv://${DB_USER}:${DB_PASS}@elearning.exdyomm.mongodb.net/?retryWrites=true&w=majority&ssl=true`;
+const DB_URI = `mongodb+srv://${DB_USER}:${DB_PASS}@elearning.exdyomm.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&ssl=true`;
 
 // Create a MongoClient instance
 const client = new MongoClient(DB_URI, {
