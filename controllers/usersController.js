@@ -11,7 +11,7 @@ export async function getAllUsers(req, res) {
         const users = await usersCollection.find().toArray();
         res.status(200).json(users);
     } catch (error) {
-        res.status(500).json({ message: 'Error fetching users', error });
+        res.status(500).json({ message: 'Error fetching users', error: error.message });
     }
 }
 
@@ -27,13 +27,13 @@ export async function loginUser(req, res) {
                 const token = jwt.sign({ id: user._id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
                 res.status(200).json({ message: "Login successful!", user, token });
             } else {
-                res.status(401).send('Invalid credentials');
+                res.status(401).json({ message: 'Invalid credentials' });
             }
         } else {
-            res.status(404).send('User not found');
+            res.status(404).json({ message: 'User not found' });
         }
     } catch (error) {
-        res.status(500).json({ message: 'Error logging in', error });
+        res.status(500).json({ message: 'Error logging in', error: error.message });
     }
 }
 
@@ -44,7 +44,7 @@ export async function registerUser(req, res) {
         const existingUser = await usersCollection.findOne({ email });
 
         if (existingUser) {
-            return res.status(409).send('Email already exists');
+            return res.status(409).json({ message: 'Email already exists' });
         }
 
         const saltRounds = 10;
@@ -63,7 +63,7 @@ export async function registerUser(req, res) {
         const result = await usersCollection.insertOne(newUser);
         res.status(201).json({ message: "User registered successfully!", user: result.ops[0] });
     } catch (error) {
-        res.status(500).json({ message: 'Error registering user', error });
+        res.status(500).json({ message: 'Error registering user', error: error.message });
     }
 }
 
