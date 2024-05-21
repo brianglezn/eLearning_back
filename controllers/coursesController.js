@@ -9,7 +9,7 @@ export async function getAllCourses(req, res) {
         const courses = await coursesCollection.find().toArray();
         res.status(200).json(courses);
     } catch (error) {
-        res.status(500).json({ message: 'Error fetching courses', error });
+        res.status(500).json({ message: 'Error fetching courses', error: error.message });
     }
 }
 
@@ -24,6 +24,6 @@ export async function getCoursesById(req, res) {
             res.status(404).send('Course not found');
         }
     } catch (error) {
-        res.status(500).json({ message: 'Error fetching course', error });
+        res.status(500).json({ message: 'Error fetching course', error: error.message });
     }
 }
