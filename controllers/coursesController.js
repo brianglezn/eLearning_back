@@ -1,29 +1,29 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { ObjectId } from 'mongodb';
+import { client, DB_NAME } from '../bdd/database.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const dbPath = path.join(__dirname, '../bdd/database.json');
+const db = client.db(DB_NAME);
+const coursesCollection = db.collection('courses');
 
-function readDB() {
-    const jsonData = fs.readFileSync(dbPath);
-    return JSON.parse(jsonData);
+export async function getAllCourses(req, res) {
+    try {
+        const courses = await coursesCollection.find().toArray();
+        res.status(200).json(courses);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching courses', error });
+    }
 }
 
-export function getAllCourses(req, res) {
-    const data = readDB();
-    res.status(200).json(data.courses);
-}
-
-export function getCoursesById(req, res) {
+export async function getCoursesById(req, res) {
     const { id } = req.params;
-    const data = readDB();
-    const course = data.courses.find(c => c.id.toString() === id);
+    try {
+        const course = await coursesCollection.findOne({ _id: new ObjectId(id) });
 
-    if (course) {
-        res.status(200).json(course);
-    } else {
-        res.status(404).send('Curso no encontrado');
+        if (course) {
+            res.status(200).json(course);
+        } else {
+            res.status(404).send('Course not found');
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching course', error });
     }
 }
