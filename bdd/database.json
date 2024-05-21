@@ -111,7 +111,44 @@
       "rating": "4.7",
       "reviews": 4023,
       "category": "Backend Development",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Node.js",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Node.js Basics",
+              "description": "Learn the basics of Node.js, including modules, event-driven architecture, and the Node.js runtime.",
+              "video_url": "https://example.com/nodejs/intro/node_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Setting Up Express",
+              "description": "Understand how to set up an Express server and build basic API endpoints.",
+              "video_url": "https://example.com/nodejs/intro/express_setup.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Node.js",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Asynchronous Programming",
+              "description": "Learn about asynchronous programming in Node.js, including callbacks, promises, and async/await.",
+              "video_url": "https://example.com/nodejs/advanced/async_programming.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Working with MongoDB",
+              "description": "Discover how to interact with MongoDB using the Mongoose library.",
+              "video_url": "https://example.com/nodejs/advanced/mongodb_mongoose.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
@@ -122,7 +159,44 @@
       "rating": "3.6",
       "reviews": 1765,
       "category": "UX/UI Design",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to UX/UI",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Basics of UX",
+              "description": "Learn the fundamentals of user experience design and its importance in product development.",
+              "video_url": "https://example.com/uxui/introduction/ux_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "UI Design Principles",
+              "description": "Understand the core principles of user interface design and how to create visually appealing interfaces.",
+              "video_url": "https://example.com/uxui/introduction/ui_principles.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced UX/UI Techniques",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Prototyping",
+              "description": "Learn how to create prototypes to test and validate design ideas.",
+              "video_url": "https://example.com/uxui/advanced/prototyping.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Usability Testing",
+              "description": "Discover techniques for conducting usability tests to gather feedback and improve your designs.",
+              "video_url": "https://example.com/uxui/advanced/usability_testing.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 5,
@@ -133,7 +207,44 @@
       "rating": "2.5",
       "reviews": 2319,
       "category": "Data Science",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Data Science",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Data Science Basics",
+              "description": "Learn the basics of data science, including key concepts and tools used in the field.",
+              "video_url": "https://example.com/data_science/introduction/data_science_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Data Visualization",
+              "description": "Understand how to create visual representations of data to communicate insights effectively.",
+              "video_url": "https://example.com/data_science/introduction/data_visualization.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Data Science",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Machine Learning Fundamentals",
+              "description": "Learn the fundamentals of machine learning and how to build predictive models.",
+              "video_url": "https://example.com/data_science/advanced/ml_fundamentals.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Deep Learning Concepts",
+              "description": "Explore the basics of deep learning and neural networks.",
+              "video_url": "https://example.com/data_science/advanced/deep_learning.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 6,
@@ -144,7 +255,44 @@
       "rating": "1.7",
       "reviews": 1587,
       "category": "Full Stack Development",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Django",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Django Basics",
+              "description": "Learn the basics of Django framework and how to set up a project.",
+              "video_url": "https://example.com/full_stack/introduction/django_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Models and Migrations",
+              "description": "Understand how to create models and perform database migrations in Django.",
+              "video_url": "https://example.com/full_stack/introduction/models_migrations.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Frontend with React",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "React Integration",
+              "description": "Learn how to integrate React frontend with Django backend.",
+              "video_url": "https://example.com/full_stack/frontend/react_integration.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Building Components",
+              "description": "Explore how to build reusable components in React.",
+              "video_url": "https://example.com/full_stack/frontend/building_components.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 7,
@@ -155,7 +303,44 @@
       "rating": "5",
       "reviews": 5400,
       "category": "Programming",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Getting Started with Python",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Python Basics",
+              "description": "Learn the basics of Python, including syntax, variables, and data types.",
+              "video_url": "https://example.com/python/introduction/python_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Control Flow",
+              "description": "Understand control flow in Python, including loops and conditional statements.",
+              "video_url": "https://example.com/python/introduction/control_flow.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Python",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Functions and Modules",
+              "description": "Learn about functions, modules, and how to organize your code in Python.",
+              "video_url": "https://example.com/python/advanced/functions_modules.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Object-Oriented Programming",
+              "description": "Dive into object-oriented programming in Python and understand classes and objects.",
+              "video_url": "https://example.com/python/advanced/oop.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 8,
@@ -166,7 +351,44 @@
       "rating": "2.9",
       "reviews": 3150,
       "category": "Artificial Intelligence",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Machine Learning",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Machine Learning Basics",
+              "description": "Learn the basics of machine learning, including supervised and unsupervised learning.",
+              "video_url": "https://example.com/machine_learning/introduction/ml_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Data Preprocessing",
+              "description": "Understand the importance of data preprocessing and how to clean and prepare data for modeling.",
+              "video_url": "https://example.com/machine_learning/introduction/data_preprocessing.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Machine Learning",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Neural Networks",
+              "description": "Learn about neural networks and how they are used in deep learning.",
+              "video_url": "https://example.com/machine_learning/advanced/neural_networks.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Model Evaluation",
+              "description": "Discover techniques for evaluating machine learning models and improving their performance.",
+              "video_url": "https://example.com/machine_learning/advanced/model_evaluation.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 9,
@@ -177,7 +399,44 @@
       "rating": "3.6",
       "reviews": 2020,
       "category": "Mobile Development",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Flutter",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Flutter Basics",
+              "description": "Learn the basics of Flutter framework and how to set up a Flutter project.",
+              "video_url": "https://example.com/flutter/introduction/flutter_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Building Layouts",
+              "description": "Understand how to create and manage layouts in Flutter.",
+              "video_url": "https://example.com/flutter/introduction/building_layouts.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Flutter",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "State Management",
+              "description": "Learn about state management techniques in Flutter.",
+              "video_url": "https://example.com/flutter/advanced/state_management.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Database Integration",
+              "description": "Discover how to integrate databases with Flutter applications.",
+              "video_url": "https://example.com/flutter/advanced/database_integration.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 10,
@@ -188,7 +447,44 @@
       "rating": "4.7",
       "reviews": 1650,
       "category": "Cybersecurity",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Cybersecurity",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Cybersecurity Basics",
+              "description": "Learn the basics of cybersecurity and the types of threats that exist.",
+              "video_url": "https://example.com/cybersecurity/introduction/cybersecurity_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Network Security",
+              "description": "Understand the principles of network security and how to protect networked systems.",
+              "video_url": "https://example.com/cybersecurity/introduction/network_security.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Cybersecurity",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Threat Detection",
+              "description": "Learn techniques for detecting and responding to cybersecurity threats.",
+              "video_url": "https://example.com/cybersecurity/advanced/threat_detection.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Incident Response",
+              "description": "Discover how to plan and execute an incident response to cybersecurity breaches.",
+              "video_url": "https://example.com/cybersecurity/advanced/incident_response.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 11,
@@ -199,7 +495,44 @@
       "rating": "1.5",
       "reviews": 1487,
       "category": "Cloud Computing",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Cloud Computing",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Cloud Computing Basics",
+              "description": "Learn the basics of cloud computing, including key concepts and service models.",
+              "video_url": "https://example.com/cloud_computing/introduction/cloud_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Cloud Service Models",
+              "description": "Understand the different cloud service models such as IaaS, PaaS, and SaaS.",
+              "video_url": "https://example.com/cloud_computing/introduction/service_models.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Cloud Computing",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "Cloud Deployment",
+              "description": "Learn how to deploy applications on cloud platforms.",
+              "video_url": "https://example.com/cloud_computing/advanced/cloud_deployment.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Cloud Security",
+              "description": "Discover techniques for securing cloud-based applications and data.",
+              "video_url": "https://example.com/cloud_computing/advanced/cloud_security.mp4"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 12,
@@ -210,7 +543,44 @@
       "rating": "2.8",
       "reviews": 1932,
       "category": "Digital Marketing",
-      "chapters": []
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Introduction to Digital Marketing",
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Digital Marketing Basics",
+              "description": "Learn the basics of digital marketing and how to create an effective strategy.",
+              "video_url": "https://example.com/digital_marketing/introduction/digital_marketing_basics.mp4"
+            },
+            {
+              "episode": 2,
+              "title": "Social Media Marketing",
+              "description": "Understand how to use social media platforms for marketing and engagement.",
+              "video_url": "https://example.com/digital_marketing/introduction/social_media_marketing.mp4"
+            }
+          ]
+        },
+        {
+          "chapter": 2,
+          "title": "Advanced Digital Marketing",
+          "episodes": [
+            {
+              "episode": 3,
+              "title": "SEO Techniques",
+              "description": "Learn advanced techniques for optimizing your content for search engines.",
+              "video_url": "https://example.com/digital_marketing/advanced/seo_techniques.mp4"
+            },
+            {
+              "episode": 4,
+              "title": "Content Marketing",
+              "description": "Discover how to create and distribute valuable content to attract and retain an audience.",
+              "video_url": "https://example.com/digital_marketing/advanced/content_marketing.mp4"
+            }
+          ]
+        }
+      ]
     }
   ],
   "users": [
