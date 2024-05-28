@@ -27,21 +27,3 @@ export async function getCoursesById(req, res) {
         res.status(500).json({ message: 'Error fetching course', error: error.message });
     }
 }
-
-export async function getCoursesByUser(req, res) {
-    const { userId } = req.params;
-    try {
-        const user = await usersCollection.findOne({ _id: new ObjectId(userId) });
-
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
-        }
-
-        const courseIds = user.courses_purchased.map(id => new ObjectId(id));
-        const courses = await coursesCollection.find({ _id: { $in: courseIds } }).toArray();
-
-        res.status(200).json(courses);
-    } catch (error) {
-        res.status(500).json({ message: 'Error fetching courses', error: error.message });
-    }
-}
