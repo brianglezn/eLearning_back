@@ -35,8 +35,8 @@ export async function getCoursesById(req, res) {
 
 export async function getCoursesByUser(req, res) {
     const { userId } = req.params;
+    console.log(`Fetching courses for user with id: ${userId}`);
     try {
-        console.log(`Fetching courses for user with id: ${userId}`);
         const user = await usersCollection.findOne({ _id: new ObjectId(userId) });
 
         if (!user) {
@@ -44,12 +44,25 @@ export async function getCoursesByUser(req, res) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        const courseIds = user.courses_purchased.map(id => new ObjectId(id.$oid));
+        console.log('User found:', user);
+        console.log('Courses purchased:', user.courses_purchased);
+
+        if (!user.courses_purchased || user.courses_purchased.length === 0) {
+            console.log('No courses purchased by user');
+            return res.status(200).json([]);
+        }
+
+        const courseIds = user.courses_purchased.map(id => {
+            return (typeof id === 'string') ? new ObjectId(id) : id;
+        });
+        console.log('Course IDs:', courseIds);
+
         const courses = await coursesCollection.find({ _id: { $in: courseIds } }).toArray();
+        console.log('Courses found:', courses);
 
         res.status(200).json(courses);
     } catch (error) {
-        console.error('Error fetching courses:', error);
+        console.log('Error fetching courses:', error.message);
         res.status(500).json({ message: 'Error fetching courses', error: error.message });
     }
 }
