@@ -44,7 +44,7 @@ export async function getCoursesByUser(req, res) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        console.log('User found:', user);
+        console.log('User found:', user.username);
         console.log('Courses purchased:', user.courses_purchased);
 
         if (!user.courses_purchased || user.courses_purchased.length === 0) {
